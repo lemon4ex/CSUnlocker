@@ -1,7 +1,7 @@
 Package: net.ymlab.dev.CSUnlocker
 Name: CSUnlocker
-Version: 0.1-1
-Description: 
+Version: 1.0-1
+Description: CamScanner（扫描全能王） VIP 破解插件，基于 5.6.1 版本开发。
 Section: Tweaks
 Depends: firmware (>= 7.0), mobilesubstrate
 Conflicts: 
@@ -12,6 +12,6 @@ Author: h4ck
 dev: 
 Homepage: 
 Depiction: 
-Maintainer: 
+Maintainer: h4ck
 Icon: 
 
