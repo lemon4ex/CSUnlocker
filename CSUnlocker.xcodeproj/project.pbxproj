@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9CD9F772253B58400A5A1D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9CD9F762253B58400A5A1D9 /* Foundation.framework */; };
+		C9CD9F852253B58400A5A1D9 /* CSUnlocker.h in Headers */ = {isa = PBXBuildFile; fileRef = C9CD9F842253B58400A5A1D9 /* CSUnlocker.h */; };
+		C9CD9F872253B58400A5A1D9 /* CSUnlocker.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CD9F862253B58400A5A1D9 /* CSUnlocker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9CD9F732253B58400A5A1D9 /* CSUnlocker.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = CSUnlocker.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CD9F762253B58400A5A1D9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9CD9F7B2253B58400A5A1D9 /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		C9CD9F7C2253B58400A5A1D9 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		C9CD9F7D2253B58400A5A1D9 /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		C9CD9F7E2253B58400A5A1D9 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		C9CD9F7F2253B58400A5A1D9 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		C9CD9F802253B58400A5A1D9 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		C9CD9F822253B58400A5A1D9 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		C9CD9F832253B58400A5A1D9 /* CSUnlocker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSUnlocker-Prefix.pch"; sourceTree = "<group>"; };
+		C9CD9F842253B58400A5A1D9 /* CSUnlocker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSUnlocker.h; sourceTree = "<group>"; };
+		C9CD9F862253B58400A5A1D9 /* CSUnlocker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSUnlocker.m; sourceTree = "<group>"; };
+		C9CD9F8B2253B58400A5A1D9 /* CSUnlocker.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = CSUnlocker.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/CSUnlocker.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9CD9F6F2253B58400A5A1D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CD9F772253B58400A5A1D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9CD9F682253B58400A5A1D9 = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F782253B58400A5A1D9 /* CSUnlocker */,
+				C9CD9F752253B58400A5A1D9 /* Frameworks */,
+				C9CD9F742253B58400A5A1D9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9CD9F742253B58400A5A1D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F732253B58400A5A1D9 /* CSUnlocker.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9CD9F752253B58400A5A1D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F762253B58400A5A1D9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9CD9F782253B58400A5A1D9 /* CSUnlocker */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F842253B58400A5A1D9 /* CSUnlocker.h */,
+				C9CD9F862253B58400A5A1D9 /* CSUnlocker.m */,
+				C9CD9F792253B58400A5A1D9 /* Package */,
+				C9CD9F812253B58400A5A1D9 /* Supporting Files */,
+			);
+			path = CSUnlocker;
+			sourceTree = "<group>";
+		};
+		C9CD9F792253B58400A5A1D9 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F7A2253B58400A5A1D9 /* DEBIAN */,
+				C9CD9F882253B58400A5A1D9 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		C9CD9F7A2253B58400A5A1D9 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F7B2253B58400A5A1D9 /* preinst */,
+				C9CD9F7C2253B58400A5A1D9 /* postinst */,
+				C9CD9F7D2253B58400A5A1D9 /* postrm */,
+				C9CD9F7E2253B58400A5A1D9 /* prerm */,
+				C9CD9F7F2253B58400A5A1D9 /* control */,
+				C9CD9F802253B58400A5A1D9 /* control.txt */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		C9CD9F812253B58400A5A1D9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F822253B58400A5A1D9 /* PackageVersion.plist */,
+				C9CD9F832253B58400A5A1D9 /* CSUnlocker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9CD9F882253B58400A5A1D9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F892253B58400A5A1D9 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		C9CD9F892253B58400A5A1D9 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F8A2253B58400A5A1D9 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		C9CD9F8A2253B58400A5A1D9 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				C9CD9F8B2253B58400A5A1D9 /* CSUnlocker.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9CD9F702253B58400A5A1D9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CD9F852253B58400A5A1D9 /* CSUnlocker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9CD9F722253B58400A5A1D9 /* CSUnlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9CD9F8E2253B58400A5A1D9 /* Build configuration list for PBXNativeTarget "CSUnlocker" */;
+			buildPhases = (
+				C9CD9F6D2253B58400A5A1D9 /* ShellScript */,
+				C9CD9F6E2253B58400A5A1D9 /* Sources */,
+				C9CD9F6F2253B58400A5A1D9 /* Frameworks */,
+				C9CD9F702253B58400A5A1D9 /* Headers */,
+				C9CD9F712253B58400A5A1D9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSUnlocker;
+			productName = CSUnlocker;
+			productReference = C9CD9F732253B58400A5A1D9 /* CSUnlocker.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9CD9F692253B58400A5A1D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				TargetAttributes = {
+					C9CD9F722253B58400A5A1D9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = C9CD9F6C2253B58400A5A1D9 /* Build configuration list for PBXProject "CSUnlocker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9CD9F682253B58400A5A1D9;
+			productRefGroup = C9CD9F742253B58400A5A1D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9CD9F722253B58400A5A1D9 /* CSUnlocker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9CD9F6D2253B58400A5A1D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\n# rm -rf \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/*\"\n# cp -rf \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/PalmRiskSvr\" \"${PROJECT_DIR}/${TARGET_NAME}/Package/usr/bin/\"\n\n# 自动更新deb包版本号\necho $CONFIGURATION\nif [ \"Release\" == \"${CONFIGURATION}\" ]\nthen\npackInfoPlist=\"${PROJECT_DIR}/${TARGET_NAME}/PackageVersion.plist\"\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print PackageRevision\" \"${packInfoPlist}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :PackageRevision $buildNumber\" \"${packInfoPlist}\"\necho \"build number increase\"\nfi";
+		};
+		C9CD9F712253B58400A5A1D9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/EasyDev/bin/ed --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9CD9F6E2253B58400A5A1D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9CD9F872253B58400A5A1D9 /* CSUnlocker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9CD9F8C2253B58400A5A1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9CD9F8D2253B58400A5A1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EasyDevPath = /opt/EasyDev;
+				EasyDevTheosPath = /opt/theos;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/frameworks",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevPath)/include",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		C9CD9F8F2253B58400A5A1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSUnlocker/CSUnlocker-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C9CD9F902253B58400A5A1D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B8J3GNFE6;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EasyDevBuildPackageOnAnyBuild = NO;
+				EasyDevClearUiCacheOnInstall = NO;
+				EasyDevCopyExecutableOnAnyBuild = NO;
+				EasyDevDeviceIP = "";
+				EasyDevDevicePort = "";
+				EasyDevInstallOnAnyBuild = NO;
+				EasyDevInstallOnProfiling = NO;
+				EasyDevKillProcessName = "";
+				EasyDevKillProcessOnInstall = NO;
+				EasyDevUsePackageVersionPList = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSUnlocker/CSUnlocker-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(EasyDevTheosPath)/vendor/include",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9CD9F6C2253B58400A5A1D9 /* Build configuration list for PBXProject "CSUnlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CD9F8C2253B58400A5A1D9 /* Release */,
+				C9CD9F8D2253B58400A5A1D9 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9CD9F8E2253B58400A5A1D9 /* Build configuration list for PBXNativeTarget "CSUnlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9CD9F8F2253B58400A5A1D9 /* Release */,
+				C9CD9F902253B58400A5A1D9 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9CD9F692253B58400A5A1D9 /* Project object */;
+}

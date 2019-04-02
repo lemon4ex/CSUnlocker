@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CSUnlocker' target in the 'CSUnlocker' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
